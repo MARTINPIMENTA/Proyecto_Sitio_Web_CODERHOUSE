@@ -1,0 +1,17 @@
+.navegacion {
+  list-style: none;
+  background-color: rgba(94, 91, 91, 0.377);
+}
+
+.navegacion ul {
+  list-style: none;
+  display: inline-flex;
+}
+
+.navegacion li, .navegacion a {
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Otomanopee One', sans-serif;
+  color: red;
+}
+
