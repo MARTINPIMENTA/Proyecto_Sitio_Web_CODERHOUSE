@@ -18,12 +18,21 @@ main {
   color: black;
   margin-left: auto;
   margin-right: auto;
-  width: 95%;
+  width: 96%;
+  padding: 10px;
 }
 
 .articulos article {
   border-radius: 5px;
   height: 300px;
+  border-bottom: 2px dotted black;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.articulos img {
+  width: 300px;
+  height: 200px;
 }
 
 .articuloIzq {
@@ -32,6 +41,7 @@ main {
 
 .articuloIzq img {
   float: left;
+  padding-right: 15px;
 }
 
 .articuloDer {
@@ -40,4 +50,5 @@ main {
 
 .articuloDer img {
   float: right;
+  padding-left: 15px;
 }

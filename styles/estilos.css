@@ -1,8 +1,6 @@
 body {
-  background-image: url("https://image.freepik.com/free-photo/colour-smoke-background_71163-197.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 3000px;
+  background: grey url("https://www.vmcdn.ca/f/files/halifaxtoday/images/outdoors/060420-cottage-dock-fishing-fish-sportfishing-adobestock_242597321.jpeg") no-repeat center fixed;
+  background-size: cover;
   margin: 0;
   padding: 0;
   height: 1366px;
@@ -11,9 +9,10 @@ body {
 
 .navegacion {
   list-style: none;
-  background-color: black;
+  background-color: rgb(255, 153, 0);
   display: flex;
   justify-content: center;
+  border-bottom: 2px solid grey;
 }
 
 .navegacion ul {
@@ -23,17 +22,20 @@ body {
 
 .navegacion li, .navegacion a {
   padding: 10px;
-  font-size: 20px;
-  font-family: 'Otomanopee One', sans-serif;
+  font-size: 17px;
   text-decoration: none;
-text-shadow: rgb(143, 0, 148) 1px 0 10px; color: rgb(153, 153, 153);
-  word-spacing: 3px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bolder;
+  color: black;
+  word-spacing: 2px;
+  cursor: pointer;
 }
 
 footer {
   background-color: rgb(0, 0, 0);
-  width: 100%;
-  height: 1366px;
+  width: auto;
+  height: 29%;
+  padding: 20px;
 }
 
 .newsletter {
