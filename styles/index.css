@@ -8,10 +8,12 @@
 #imagenPrincipal img {  
   max-width: 100%;  
   height: auto;
+  border-radius: 10px;
 }  
 
 main {
   position: relative;
+  height: 800px;
 }
 
 .articulos {
@@ -25,18 +27,19 @@ main {
 .articulos article {
   border-radius: 5px;
   height: 300px;
-  border-bottom: 2px dotted black;
   font-size: 20px;
   font-family: 'Oswald', sans-serif;
 }
 
 .articulos img {
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
 }
 
 .articuloIzq {
   text-align: left;
+  padding-bottom: 90px;
 }
 
 .articuloIzq img {
@@ -51,4 +54,15 @@ main {
 .articuloDer img {
   float: right;
   padding-left: 15px;
+}
+
+.redes {
+  display: inline-block;
+  padding-left: 230px;
+}
+
+.redes img {
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
 }

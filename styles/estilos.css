@@ -1,5 +1,6 @@
 body {
-  background: grey url("https://www.vmcdn.ca/f/files/halifaxtoday/images/outdoors/060420-cottage-dock-fishing-fish-sportfishing-adobestock_242597321.jpeg") no-repeat center fixed;
+  background-color: black;
+  background-image: url("https://www.dorados.com.ar/wp-content/uploads/2013/08/Camping-Near-The-Lake-Background-Wallpaper.jpg.original.jpg") ;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -20,6 +21,11 @@ body {
   display: inline-flex;
 }
 
+.navegacion img {
+  width: 50px;
+  height: 50px;
+}
+
 .navegacion li, .navegacion a {
   padding: 10px;
   font-size: 17px;
@@ -32,16 +38,19 @@ body {
 }
 
 footer {
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.966);
+  border-radius: 10px;
   width: auto;
-  height: 29%;
+  height: 19%;
   padding: 20px;
 }
 
 .newsletter {
-  align-items: flex-start;
   float: left;
   width: 33%;
+  background-color: rgba(255, 153, 0, 0.411);
+  border-radius: 10px;
+  border: 2px solid grey;
 }
 
 .newsletter legend {
@@ -52,12 +61,22 @@ footer {
   color: white;
 }
 
+.newsletter fieldset {
+  border: 0px;
+  padding: 6px;
+}
+
 .redes {
-  align-items: center;
+  word-spacing: 20px;
 }
 
 .contacto {
+  background-color: rgba(255, 153, 0, 0.411);
+  border-radius: 10px;
+  border: 2px solid grey;
   color: white;
   float: right;
   width: 20%;
+  text-align: center;
+  padding: 3px;
 }
