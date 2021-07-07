@@ -1,0 +1,44 @@
+#imagenPrincipal {
+  width: auto;  
+  text-align: center;  
+  padding: 15px;  
+  border: 3px;
+}
+
+#imagenPrincipal img {  
+  max-width: 100%;  
+  height: auto;  
+  border-radius: 10px;
+}  
+
+main {
+  position: relative;
+}
+
+.articulos {
+  background-color: rgba(54, 54, 54, 0.705);
+  color: black;
+}
+
+.articulos article {
+  border-radius: 5px;
+  border: 1px solid;
+  background-color: rgba(107, 106, 106, 0.705);
+  height: 300px;
+}
+
+.articuloIzq {
+  text-align: left;
+}
+
+.articuloIzq img {
+  float: left;
+}
+
+.articuloDer {
+  text-align: right;
+}
+
+.articuloDer img {
+  float: right;
+}
