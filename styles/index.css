@@ -55,14 +55,3 @@ main {
   float: right;
   padding-left: 15px;
 }
-
-.redes {
-  display: inline-block;
-  padding-left: 230px;
-}
-
-.redes img {
-  height: 30px;
-  width: 30px;
-  border-radius: 20px;
-}

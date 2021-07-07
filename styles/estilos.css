@@ -67,7 +67,15 @@ footer {
 }
 
 .redes {
+  display: inline-block;
+  padding-left: 230px;
   word-spacing: 20px;
+}
+
+.redes img {
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
 }
 
 .contacto {

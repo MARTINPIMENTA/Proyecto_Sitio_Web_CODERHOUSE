@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles\estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
   <header>
     <!--Barra de navegacion-->
-    <nav class="navBar">
+    <!-- a href=# es para una direccion especifica, indicada por el id -->
+    <nav class="navegacion">
       <ul>
         <li>
           <a href="index.html">
@@ -32,9 +35,6 @@
           <a href="index.html#footer">Contactanos</a>
         </li>
       </ul>
-    </nav>
-    <nav>
-      <h1>Cañas</h1>
     </nav>
   </header>
   <body>
@@ -83,8 +83,9 @@
       </article>
     </div>
   </body>
-  <footer>
-    <div>
+  <!-- Inicio del footer -->
+  <footer id="footer">
+    <div class="newsletter">
       <fieldset>
         <legend>Newsletter</legend>
         <form action="" method="post" enctype="">
@@ -96,22 +97,22 @@
         </form>
       </fieldset>
     </div>
-    <div> 
-      <a href=>
-        <img src="https://web.whatsapp.com/" alt="Logo de whatsapp">
+    <div class="redes"> 
+      <a href="https://web.whatsapp.com/">
+        <img src="imgs\whatsapp.png" alt="Logo de whatsapp">
       </a>
-      <a href=>
-        <img src="https://www.instagram.com/" alt="Logo de instagram">
+      <a href="https://www.instagram.com/">
+        <img src="imgs\instagram.png" alt="Logo de instagram">
       </a>
-      <a href=>
-        <img src="https://www.facebook.com/" alt="Logo de facebook">
+      <a href="https://www.facebook.com/">
+          <img src="imgs\facebook.png" alt="Logo de facebook">
       </a>
     </div>
-    <div>
-      <p>
-        <strong>mail:</strong> example@gmail.com <br>
-        <strong>tel:</strong> 4547-3345
-      </p>
+    <div class="contacto">
+        <p>
+          <strong>mail:</strong> example@gmail.com <br>
+          <strong>tel:</strong> 4547-3345
+        </p>
     </div>
   </footer>
 </body>
