@@ -1,5 +1,8 @@
 body {
-  background-color: rgba(0, 0, 0, 0.555);
+  background-image: url("https://image.freepik.com/free-photo/colour-smoke-background_71163-197.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 3000px;
   margin: 0;
   padding: 0;
   height: 1366px;
@@ -8,8 +11,7 @@ body {
 
 .navegacion {
   list-style: none;
-  background-color: #25252560;
-  border-radius: 10px;
+  background-color: black;
   display: flex;
   justify-content: center;
 }
@@ -24,7 +26,7 @@ body {
   font-size: 20px;
   font-family: 'Otomanopee One', sans-serif;
   text-decoration: none;
-  color: blue;
+text-shadow: rgb(143, 0, 148) 1px 0 10px; color: rgb(153, 153, 153);
   word-spacing: 3px;
 }
 
