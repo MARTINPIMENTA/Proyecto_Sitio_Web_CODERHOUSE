@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles\estilos.css">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+  </style>
+  <title>Reeles</title>
 </head>
 <body>
   <header>
@@ -19,8 +22,13 @@
             <img src="imgs\logo.png" alt="Logo de la pagina">
           </a>
         </li>
-        <li>
+        <li class="cajaCategorias">
           Categorias <!--Bootstrap-->
+          <div class="categoriasDesplegable">
+            <a href="canas.html">Cañas</a>
+            <a href="reels.html">Reeles</a>
+            <a href="carpas.html">Carpas</a>
+          </div>
         </li>
         <li>
           <a href="destacados.html">Destacados</a>
@@ -85,28 +93,27 @@
   </body>
   <!-- Inicio del footer -->
   <footer id="footer">
-    <div class="newsletter">
-      <fieldset>
-        <legend>Newsletter</legend>
-        <form action="" method="post" enctype="">
-          <label for="emailBox">Mail</label>
-          <input type="email" name="mail" placeholder="mail" id="emailBox">
-          <label for="mensajeBox">Mensaje</label>
-          <textarea name="mensaje" placeholder="mensaje" cols="30" rows="5" id="mensajeBox"></textarea>
-          <input type="submit" value="Enviar">
-        </form>
-      </fieldset>
-    </div>
     <div class="redes"> 
-      <a href="https://web.whatsapp.com/">
-        <img src="imgs\whatsapp.png" alt="Logo de whatsapp">
-      </a>
-      <a href="https://www.instagram.com/">
-        <img src="imgs\instagram.png" alt="Logo de instagram">
-      </a>
-      <a href="https://www.facebook.com/">
-          <img src="imgs\facebook.png" alt="Logo de facebook">
-      </a>
+      <ul class="ulRedes">
+        <li>
+          <a href="#">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <span> - Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <span> - Twitter</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <span> - Instagram</span>
+          </a>
+        </li>
+      </ul>
     </div>
     <div class="contacto">
         <p>
