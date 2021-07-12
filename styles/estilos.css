@@ -13,13 +13,12 @@ body {
   left: 5.1%;
   width: 90%;
   height: 80px;
+  text-align: center;
 }
 
 .navegacion ul {
   list-style: none;
   display: inline-flex;
-  position: relative;
-  left: 10%;
 }
 
 .navegacion img {
@@ -38,6 +37,10 @@ body {
   color: black;
   word-spacing: 2px;
   cursor: pointer;
+}
+
+.navegacion li:hover {
+  text-decoration: underline 2px;
 }
 
 .categoriasDesplegable {
@@ -222,13 +225,13 @@ footer {
 }
 
 .ulRedes li:hover:nth-child(3) a{
-  background: #dd4b39;
+  background: #be3384;
 }
 .ulRedes li:hover:nth-child(3) a:before{
-  background: #b33a2b;
+  background:  #be3384;
 }
 .ulRedes li:hover:nth-child(3) a:after{
-  background: #e66a5a;
+  background:  #dd3999;
 }
 
 .contacto {
