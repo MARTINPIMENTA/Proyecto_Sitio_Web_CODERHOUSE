@@ -16,9 +16,8 @@
   background-color: rgba(0, 255, 0, 0.274);
   border-radius: 5px;
   height: 90px;
-  position: absolute;
-  bottom: 76%;
-  left: 10%;
+  position: relative;
+  bottom: 37vh;
 }
 
 .articulos {
