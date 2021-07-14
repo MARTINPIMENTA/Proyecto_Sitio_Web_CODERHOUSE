@@ -27,11 +27,12 @@ body {
   bottom: 21%;
 }
 
-.navegacion li, .navegacion a {
+.navegacion li,
+.navegacion a {
   padding: 10px;
   font-size: 10px;
   text-decoration: none;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   color: black;
   word-spacing: 2px;
   cursor: pointer;
@@ -47,7 +48,7 @@ body {
   position: absolute;
   background-color: #0000002d;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 10px;
 }
@@ -99,118 +100,118 @@ main {
 }
 
 .ulRedes {
-  position:relative;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
-  display:flex;
-  margin:0;
-  padding:0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .ulRedes li {
-  list-style:none;
-  margin:0 5px;
+  list-style: none;
+  margin: 0 5px;
 }
 
 .ulRedes li a .fa {
   color: #262626;
-  line-height:80px;
-  transition: .5s;
+  line-height: 80px;
+  transition: 0.5s;
   padding-right: 14px;
 }
 
 .ulRedes li a span {
-  padding:0;
-  margin:0;
-  position:relative;
+  padding: 0;
+  margin: 0;
+  position: relative;
   bottom: 80px;
   right: 20px;
   color: #0c0c0c;
   font-size: 12px;
   letter-spacing: 2px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .ulRedes li a {
   text-decoration: none;
-  display:absolute;
-  display:block;
-  width:50px;
-  height:20px;
+  display: absolute;
+  display: block;
+  width: 50px;
+  height: 20px;
   background: rgb(229, 255, 0);
-  text-align:left;
+  text-align: left;
   padding-left: 20px;
-  transform: rotate(-30deg) skew(25deg) translate(0,0);
-  transition:.5s;
-  box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+  transform: rotate(-30deg) skew(25deg) translate(0, 0);
+  transition: 0.5s;
+  box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
 }
 
 .ulRedes li a:before {
-  content: '';
+  content: "";
   position: absolute;
-  top:10px;
-  left:-20px;
-  height:100%;
-  width:20px;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
   background: #ff0000;
-  transform: .5s;
+  transform: 0.5s;
   transform: rotate(0deg) skewY(-45deg);
 }
 
 .ulRedes li a:after {
-  content: '';
+  content: "";
   position: absolute;
-  bottom:-20px;
-  left:-10px;
-  height:20px;
-  width:100%;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
   background: #008f00;
-  transform: .5s;
+  transform: 0.5s;
   transform: rotate(0deg) skewX(-45deg);
 }
 
 .ulRedes li a:hover {
-  transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
-  box-shadow: -50px 50px 50px rgba(0,0,0,.5);
+  transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
 }
 
 .ulRedes li:hover .fa {
-  color:#fff;
+  color: #fff;
 }
 
 .ulRedes li:hover span {
-  color:#fff;
+  color: #fff;
 }
 
-.ulRedes li:hover:nth-child(1) a{
+.ulRedes li:hover:nth-child(1) a {
   background: #3b5998;
 }
-.ulRedes li:hover:nth-child(1) a:before{
+.ulRedes li:hover:nth-child(1) a:before {
   background: #365492;
 }
-.ulRedes li:hover:nth-child(1) a:after{
+.ulRedes li:hover:nth-child(1) a:after {
   background: #4a69ad;
 }
 
-.ulRedes li:hover:nth-child(2) a{
+.ulRedes li:hover:nth-child(2) a {
   background: #00aced;
 }
-.ulRedes li:hover:nth-child(2) a:before{
+.ulRedes li:hover:nth-child(2) a:before {
   background: #097aa5;
 }
-.ulRedes li:hover:nth-child(2) a:after{
+.ulRedes li:hover:nth-child(2) a:after {
   background: #53b9e0;
 }
 
-.ulRedes li:hover:nth-child(3) a{
+.ulRedes li:hover:nth-child(3) a {
   background: #be3384;
 }
-.ulRedes li:hover:nth-child(3) a:before{
-  background:  #be3384;
+.ulRedes li:hover:nth-child(3) a:before {
+  background: #be3384;
 }
-.ulRedes li:hover:nth-child(3) a:after{
-  background:  #dd3999;
+.ulRedes li:hover:nth-child(3) a:after {
+  background: #dd3999;
 }
 
 .contacto {

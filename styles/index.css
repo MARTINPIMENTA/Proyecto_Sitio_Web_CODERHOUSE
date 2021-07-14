@@ -1,18 +1,18 @@
 #imagenPrincipal {
-  width: auto;  
-  text-align: center;  
+  width: auto;
+  text-align: center;
   border: 3px;
 }
 
 #imagenPrincipal img {
   position: relative;
-  width: 100%;  
+  width: 100%;
   border-radius: 10px;
   border: 1px solid rgb(0, 255, 0);
-}  
+}
 
 #textoPrincipal {
-  font-family: 'Press Start 2P', cursive;  
+  font-family: "Press Start 2P", cursive;
   color: rgb(255, 255, 255);
   background-color: rgba(0, 255, 0, 0.274);
   border-radius: 5px;
@@ -32,7 +32,7 @@
 .articulos article {
   height: 300px;
   font-size: 20px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   color: azure;
   margin-bottom: 110px;
 }
