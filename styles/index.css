@@ -4,7 +4,8 @@
   border: 3px;
 }
 
-#imagenPrincipal img {  
+#imagenPrincipal img {
+  position: relative;
   width: 100%;  
   border-radius: 10px;
   border: 1px solid rgb(0, 255, 0);

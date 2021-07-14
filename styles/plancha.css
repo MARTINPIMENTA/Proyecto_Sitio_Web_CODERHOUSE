@@ -1,0 +1,51 @@
+main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 250px;
+  border-top: 5px dotted rgb(255, 0, 0);
+  border-left: 5px dotted rgb(0, 17, 255);
+  border-right: 5px dotted rgb(255, 251, 0);
+  border-bottom: 5px dotted rgb(0, 255, 21);
+  border-radius: 20px;
+}
+
+.tituloPrincipal {
+  text-align: center;
+  margin-bottom: 3.5%;
+}
+
+.tituloPrincipal h1 {
+  display: inline-flex;
+  background-color: rgba(128, 255, 0, 0.473);
+  border-radius: 2px;
+  color: azure;
+  font-size: 25px;
+  font-family: 'Press Start 2P', cursive;
+  float: inline-start;
+  margin-left: 6%;
+}
+
+.contenedorArticulos {
+  color: black;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.articuloPlancha {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7%;
+  color: azure;
+}
+
+.articuloPlancha img {
+  width: 256px;
+  height: 256px;
+  
+}
+
+.articuloPlancha p {
+  margin-left: 3%;
+}
