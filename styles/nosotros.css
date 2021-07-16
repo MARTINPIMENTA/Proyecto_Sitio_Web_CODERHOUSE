@@ -1,0 +1,73 @@
+main {
+  height: 1000px;
+  margin-bottom: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedorPrincipal {
+  position: relative;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(https://i.pinimg.com/originals/80/d8/8d/80d88dc14c4beca7615d7ec44c002cfd.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 5px dotted;
+  border-radius: 20px;
+  border-top-color: red;
+  border-left-color: blue;
+  border-right-color: rgb(238, 255, 0);
+  border-bottom-color: rgb(0, 255, 0);
+}
+
+.tituloPrincipal {
+  border-radius: 2px;
+  color: azure;
+  font-size: 10px;
+  font-family: "Press Start 2P", cursive;
+  margin: 20px;
+}
+
+.tituloPrincipal:hover {
+  text-decoration: underline blue;
+}
+
+.contenedorInfo {
+  position: relative;
+  height: 740px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  margin-bottom: 60px;
+}
+
+.imagenPresentacion {
+  text-align: right;
+}
+
+.imagenPresentacion img {
+  height: 300px;
+  width: 400px;
+  margin-top: 200px;
+  border-radius: 10px;
+}
+
+.artPresentacion {
+  display: flex ;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  color: azure;
+  position: relative;
+  bottom: 340px;
+}
+
+.artPresentacion p {
+  width: 30%;
+  font-size: 20px;
+}
