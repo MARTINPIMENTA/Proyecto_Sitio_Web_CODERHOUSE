@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles\feedback.css">
     <title>Feedback</title>
   </head>
   <body>
@@ -51,30 +52,41 @@
     </header>
     <!-- Inicio de main -->
     <main>
-      <div>
-        <fieldset>
+      <div class="tituloPrincipal">
+        <h1>Queremos tu opinion</h1>
+      </div>
+      <div class="seccionPrincipal">
+        <fieldset class="formularioGeneral">
           <legend>Feedback</legend>
-          <form action="" method="post" enctype="">
-            <label for="campo 1">Te interesan nuestros productos?</label>
-            <select name="tipo" id="campo 1">
+          <form class="contenedorPreguntas" action="" method="post" enctype="">
+            <div class="campoForm" id="productosForm">
+              <label for="campo 1">Te interesan nuestros productos?</label>
+              <select name="tipo" id="campo 1">
               <option value="1">Poco</option>
               <option value="2">Algo</option>
               <option value="3">Mucho</option>
-            </select>
-            <label for="campo 2">Se entiende nuestra pagina?</label>
-            <select name="tipo" id="campo 2">
+              </select>
+            </div>
+            <div class="campoForm" id="interfazForm">
+              <label for="campo 2">Se entiende nuestra pagina?</label>
+              <select name="tipo" id="campo 2">
               <option value="1">Poco</option>
               <option value="2">Algo</option>
               <option value="3">Mucho</option>
-            </select>
-            <label for="campo 3">Cambiarias algo de nuestra pagina?</label>
-            <select name="tipo" id="campo 3">
+              </select>
+            </div>
+            <div class="campoForm" id="cambiosForm">
+              <label for="campo 3">Cambiarias algo de nuestra pagina?</label>
+              <select name="tipo" id="campo 3">
               <option value="1">Si</option>
               <option value="0">No</option>
-            </select>
-            <label for="comentario">Que cambiarias?</label>
-            <textarea name="comentario" cols="20" rows="3"></textarea>
-            <input type="submit" value="Enviar" />
+              </select>
+            </div>
+            <div class="campoForm" id="inputForm">
+              <label for="comentario">Que cambiarias?</label>
+              <textarea name="comentario" cols="20" rows="3"></textarea>
+              <input type="submit" value="Enviar" />
+            </div>
           </form>
         </fieldset>
       </div>

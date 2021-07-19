@@ -1,0 +1,11 @@
+main {
+  height: 1000px;
+}
+
+.tituloPrincipal {
+  color: azure;
+}
+
+legend, label {
+  color: aliceblue;
+} /* Eliminar despues de dar diseño a todo */
