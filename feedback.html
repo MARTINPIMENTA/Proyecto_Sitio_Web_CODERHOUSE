@@ -59,9 +59,9 @@
         <fieldset class="formularioGeneral">
           <legend>Feedback</legend>
           <form class="contenedorPreguntas" action="" method="post" enctype="">
-            <div class="campoForm" id="productosForm">
-              <label for="campo 1">Te interesan nuestros productos?</label>
-              <select name="tipo" id="campo 1">
+            <div class="campoForm" id="articulosForm">
+              <label for="campo 1">Te interesan nuestros articulos?</label>
+              <select name="tipo" id="campo1">
               <option value="1">Poco</option>
               <option value="2">Algo</option>
               <option value="3">Mucho</option>
@@ -69,7 +69,7 @@
             </div>
             <div class="campoForm" id="interfazForm">
               <label for="campo 2">Se entiende nuestra pagina?</label>
-              <select name="tipo" id="campo 2">
+              <select name="tipo" id="campo2">
               <option value="1">Poco</option>
               <option value="2">Algo</option>
               <option value="3">Mucho</option>
@@ -77,15 +77,17 @@
             </div>
             <div class="campoForm" id="cambiosForm">
               <label for="campo 3">Cambiarias algo de nuestra pagina?</label>
-              <select name="tipo" id="campo 3">
+              <select name="tipo" id="campo3">
               <option value="1">Si</option>
               <option value="0">No</option>
               </select>
             </div>
             <div class="campoForm" id="inputForm">
               <label for="comentario">Que cambiarias?</label>
-              <textarea name="comentario" cols="20" rows="3"></textarea>
-              <input type="submit" value="Enviar" />
+              <textarea id="campo4" name="comentario" cols="20" rows="3"></textarea>
+            </div>
+            <div class="campoForm" id="botonEnviar">
+              <input class="botonEnviar" type="submit" value="Enviar" />
             </div>
           </form>
         </fieldset>

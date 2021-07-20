@@ -1,11 +1,93 @@
 main {
   height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tituloPrincipal {
+  border-radius: 2px;
   color: azure;
+  font-size: 10px;
+  font-family: "Press Start 2P", cursive;
+  margin: 20px;
+}
+
+.seccionPrincipal {
+  height: 700px;
+  width: 90%;
+}
+
+.formularioGeneral {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  border-radius: 20px;
+  border: dotted 5px;
+  border-top-color: red;
+  border-left-color: blue;
+  border-right-color: rgb(238, 255, 0);
+  border-bottom-color: rgb(0, 255, 0);
+  justify-content: space-around;
+}
+
+.contenedorPreguntas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  align-content: center;
+}
+
+.campoForm {
+  margin: 40px;
+}
+
+select {
+  border-radius: 10px;
 }
 
 legend, label {
   color: aliceblue;
-} /* Eliminar despues de dar diseño a todo */
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+}
+
+.botonEnviar {
+  color: aliceblue;
+  width: 20%;
+  background-color: black;
+  border-radius: 5px;
+  border: dotted 2px;
+  border-top-color: red;
+  border-left-color: blue;
+  border-right-color: rgb(238, 255, 0);
+  border-bottom-color: rgb(0, 255, 0);
+}
+
+.botonEnviar:hover {
+  color: red;
+  background-color: rgba(0, 255, 0, 0.815);
+}
+
+#botonEnviar {
+  text-align: center;
+}
+
+#campo1 {
+  background-color: red;
+}
+
+#campo2 {
+  background-color: yellow;
+}
+
+#campo3 {
+  background-color: rgb(0, 255, 0);
+}
+
+#campo4 {
+  background-color: blue;
+}
