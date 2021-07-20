@@ -2,11 +2,16 @@
   width: auto;
   text-align: center;
   border: 3px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
 #imagenPrincipal img {
   position: relative;
-  width: 100%;
+  width: 90%;
+  height: 850px;
   border-radius: 10px;
   border: 1px solid rgb(0, 255, 0);
 }
@@ -17,6 +22,7 @@
   background-color: rgba(0, 255, 0, 0.274);
   border-radius: 5px;
   height: 90px;
+  width: 90%;
   position: relative;
   bottom: 37vh;
 }
