@@ -38,6 +38,7 @@ main {
 .articuloBurger {
   display: flex;
   justify-content: center;
+  width: 100%;
   margin-bottom: 7%;
   color: azure;
   border: 3px dotted;
@@ -77,5 +78,5 @@ main {
 
 .articuloBurger p {
   margin-left: 3%;
-  font-size: 25px;
+  font-size: 20px;
 }
