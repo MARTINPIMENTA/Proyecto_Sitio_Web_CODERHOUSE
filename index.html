@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Inicio - BurgerFan</title>
   </head>
   <!-- Inicio de body -->
@@ -54,19 +55,21 @@
     <!-- Inicio de main -->
     <main>
       <!-- Imagen principal de la pagina -->
-      <div id="imagenPrincipal">
+      <div id="imagenPrincipal" data-aos="zoom-in">
         <img
           src="imgs\hamburguesa-burgertify-2019.jpg"
           alt="Imagen principal de la pagina web"
         />
-        <div id="textoPrincipal">
+        <div id="textoPrincipal" data-aos="fade-down">
           <h1>BurgerFan</h1>
           <p>Si te gustan las hamburguesas, es por aca!</p>
         </div>
       </div>
       <!-- Div con articulos principales de la pagina -->
       <div class="articulos">
-        <article class="articuloIzq">
+        <article class="articuloIzq" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <img
             src="imgs\3D56XSBRYRAHNLL2IVTW7DDYFA.jpg"
             alt="Imagen del primer articulo"
@@ -78,7 +81,9 @@
             voluptatem est molestiae sed reprehenderit.
           </p>
         </article>
-        <article class="articuloDer">
+        <article class="articuloDer" data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <img
             src="imgs\hamburguesa-burgertify-2019-2.jpg"
             alt="Imagen del segundo articulo"
@@ -125,5 +130,9 @@
         </p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

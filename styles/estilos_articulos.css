@@ -18,17 +18,20 @@ main {
 .tituloPrincipal h1 {
   display: inline-flex;
   background-color: rgba(128, 255, 0, 0.473);
+  width: 80%;
   border-radius: 2px;
   color: azure;
   font-size: 25px;
   font-family: "Press Start 2P", cursive;
   float: inline-start;
   margin-left: 6%;
+  animation-duration: 2s;
+  animation-name: aparecer;
 }
 
 .contenedorArticulos {
   color: black;
-  width: 70%;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -79,4 +82,15 @@ main {
 .articuloBurger p {
   margin-left: 3%;
   font-size: 20px;
+}
+
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 248, 220, 0);
+  }
+  100% {
+    opacity: 1;
+  }
 }

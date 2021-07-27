@@ -69,6 +69,41 @@
 }
 
 
+@media (max-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #imagenPrincipal {
+    height: 25%;
+  }
+
+  #imagenPrincipal img {
+    height: 25%;
+    margin-bottom: 40px;
+  }
+
+  #textoPrincipal {
+    font-size: 10px;
+    height: 80px;
+    width: 90%;
+    position: absolute;
+    top: 180px;
+  }
+
+  .articulos img {
+    width: 55%;
+    height: 250px;
+  }
+
+  .articulos p {
+    font-size: 17px;
+  }
+  
+}
+
 @media (max-width:600px) {
   main {
     display: flex;
@@ -122,41 +157,6 @@
   .articuloDer img {
     float: center;
     margin-right: 0px;
-  }
-  
-}
-
-@media (max-width: 1024px) {
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #imagenPrincipal {
-    height: 25%;
-  }
-
-  #imagenPrincipal img {
-    height: 25%;
-    margin-bottom: 40px;
-  }
-
-  #textoPrincipal {
-    font-size: 10px;
-    height: 80px;
-    width: 90%;
-    position: absolute;
-    top: 180px;
-  }
-
-  .articulos img {
-    width: 60%;
-    height: 250px;
-  }
-
-  .articulos p {
-    font-size: 17px;
   }
   
 }

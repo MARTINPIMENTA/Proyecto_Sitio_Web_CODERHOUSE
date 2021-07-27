@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles\estilos_articulos.css" />
     <title>A la parrilla</title>
   </head>
@@ -56,7 +57,7 @@
         <h1>A la parrilla</h1>
       </div>
       <div class="contenedorArticulos">
-        <article class="articuloBurger">
+        <article class="articuloBurger" data-aos="flip-right">
           <img src="" alt="Articulo 1" />
           <p>
             <strong class="nombreArticulo">Ejemplo Nombre: </strong>
@@ -64,7 +65,7 @@
             obcaecati quae deleniti deserunt animi?
           </p>
         </article>
-        <article class="articuloBurger">
+        <article class="articuloBurger" data-aos="flip-right">
           <img src="" alt="Articulo 2" />
           <p>
             <strong class="nombreArticulo">Ejemplo Nombre: </strong>
@@ -72,7 +73,7 @@
             obcaecati quae deleniti deserunt animi?
           </p>
         </article>
-        <article class="articuloBurger">
+        <article class="articuloBurger" data-aos="flip-right">
           <img src="" alt="Articulo 3" />
           <p>
             <strong class="nombreArticulo">Ejemplo Nombre: </strong>
@@ -80,7 +81,7 @@
             obcaecati quae deleniti deserunt animi?
           </p>
         </article>
-        <article class="articuloBurger">
+        <article class="articuloBurger" data-aos="flip-right">
           <img src="" alt="Articulo 4" />
           <p>
             <strong class="nombreArticulo">Ejemplo Nombre: </strong>
@@ -88,14 +89,14 @@
             obcaecati quae deleniti deserunt animi?
           </p>
         </article>
-        <article class="articuloBurger">
+        <article class="articuloBurger" data-aos="flip-right">
           <p>
             <strong class="nombreArticulo">Ejemplo Nombre: </strong>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni rem,
             obcaecati quae deleniti deserunt animi?
           </p>
         </article>
-        <article class="articuloBurger">
+        <article class="articuloBurger" data-aos="flip-right">
           <img src="" alt="Articulo 6" />
           <p>
             <strong class="nombreArticulo">Ejemplo Nombre: </strong>
@@ -138,5 +139,9 @@
         </p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
   </body>
 </html>
