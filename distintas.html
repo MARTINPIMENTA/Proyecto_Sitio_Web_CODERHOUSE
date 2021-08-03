@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css\bootstrap.css">
     <link rel="stylesheet" href="styles\estilos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
@@ -17,38 +18,44 @@
     <!-- Inicio de header -->
     <header>
       <!--Barra de navegacion-->
-      <nav class="navegacion">
-        <ul>
-          <li>
-            <a href="index.html">
-              <img
-                src="imgs\output-onlinepngtools.png"
-                alt="Logo de la pagina"
-              />
-            </a>
-          </li>
-          <!-- Menu desplegable de categorias -->
-          <li class="cajaCategorias">
-            Categorias
-            <div class="categoriasDesplegable">
-              <a href="plancha.html">Plancha</a>
-              <a href="parrilla.html">Parrilla</a>
-              <a href="distintas.html">Distintas</a>
-            </div>
-          </li>
-          <li>
-            <a href="destacadas.html">Destacadas</a>
-          </li>
-          <li>
-            <a href="nosotros.html">Nosotros</a>
-          </li>
-          <li>
-            <a href="feedback.html">Feedback</a>
-          </li>
-          <li>
-            <a href="index.html#footer">Contactanos</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="imgs\output-onlinepngtools.png"
+              alt="Logo de la pagina"
+            />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <!-- Menu desplegable de categorias -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
+                  <li><a class="dropdown-item" href="plancha.html">Plancha</a></li>
+                  <li><a class="dropdown-item" href="parrilla.html"></a>Parrilla</li>
+                  <li><a class="dropdown-item" href="distintas.html"></a>Distintas</li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="destacadas.html">Destacadas</a>
+              </li>
+              <li class="nav-item">
+                <a href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a href="feedback.html">Feedback</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#footer">Contactanos</a>
+              </li>
+            </ul>
+          </div>
       </nav>
     </header>
     <!-- Inicio de body -->
@@ -140,6 +147,7 @@
         </p>
       </div>
     </footer>
+    <script src="js\bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
