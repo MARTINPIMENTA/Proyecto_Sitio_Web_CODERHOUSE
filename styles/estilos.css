@@ -19,6 +19,7 @@ body {
 }
 
 .navegacion ul {
+  margin-top: 15px;
   list-style: none;
   display: inline-flex;
 }
