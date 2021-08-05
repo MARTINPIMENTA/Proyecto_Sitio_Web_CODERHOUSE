@@ -4,15 +4,9 @@ body {
   padding: 0;
   min-height: 100%;
   width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  flex-direction: column;
+  align-content: center;
 }
 
 .navegacion {
@@ -22,68 +16,61 @@ body {
   width: auto;
   height: 80px;
   text-align: center;
-}
-
-.navegacion ul {
-  margin-top: 15px;
-  list-style: none;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.navegacion img {
-  width: 50px;
-  height: 50px;
-  position: relative;
-  bottom: 21%;
-}
-
-.navegacion li,
-.navegacion a {
-  padding: 10px;
-  font-size: 10px;
-  text-decoration: none;
-  font-family: "Press Start 2P", cursive;
-  color: black;
-  word-spacing: 2px;
-  cursor: pointer;
-  color: #19ff05;
-}
-
-.navegacion li:hover {
-  -webkit-text-decoration: underline 2px;
-          text-decoration: underline 2px;
-}
+  ul {
+    margin-top: 15px;
+    list-style: none;
+    display: inline-flex;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 21%;
+  }
+  li,
+  a {
+    padding: 10px;
+    font-size: 10px;
+    text-decoration: none;
+    font-family: "Press Start 2P", cursive;
+    color: black;
+    word-spacing: 2px;
+    cursor: pointer;
+    color: rgb(25, 255, 5);
+  }
+  li:hover {
+    text-decoration: underline 2px;
+  }
+} 
 
 /*BEM*/
-.cajaCategorias__categoriasDesplegable {
-  display: none;
-  position: absolute;
-  background-color: #0000002d;
-  min-width: 160px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 10px;
-}
-
-.cajaCategorias__categoriasDesplegable a {
-  color: #2bff00;
-  margin-top: 10px;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.cajaCategorias__categoriasDesplegable a:hover {
-  background-color: rgba(72, 255, 0, 0.397);
-  border-radius: 10px;
+.cajaCategorias {
+  &__categoriasDesplegable {
+    display: none;
+    position: absolute;
+    background-color: #0000002d;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+    a {
+      color: rgb(43, 255, 0);
+      margin-top: 10px;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    a:hover {
+      background-color: rgba(72, 255, 0, 0.397);
+      border-radius: 10px;
+    }
+  }
 }
 
 .cajaCategorias:hover .cajaCategorias__categoriasDesplegable {
   display: block;
 }
+
 
 main {
   height: 80%;
@@ -95,7 +82,6 @@ main {
 }
 
 #footer {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(94, 255, 0, 0.11)));
   background-image: linear-gradient(black, rgba(94, 255, 0, 0.11));
   border-radius: 3px;
   border-top: 1px solid azure;
@@ -120,10 +106,7 @@ main {
   position: relative;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transform: translate(-50%, -50%);
   display: flex;
   margin: 0;
   padding: 0;
@@ -137,7 +120,6 @@ main {
 .ulRedes li a .fa {
   color: #262626;
   line-height: 80px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   padding-right: 14px;
 }
@@ -151,7 +133,6 @@ main {
   color: #0c0c0c;
   font-size: 12px;
   letter-spacing: 2px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -161,15 +142,12 @@ main {
   display: block;
   width: 50px;
   height: 20px;
-  background: #e5ff00;
+  background: rgb(229, 255, 0);
   text-align: left;
   padding-left: 20px;
-  -webkit-transform: rotate(-30deg) skew(25deg) translate(0, 0);
-          transform: rotate(-30deg) skew(25deg) translate(0, 0);
-  -webkit-transition: 0.5s;
+  transform: rotate(-30deg) skew(25deg) translate(0, 0);
   transition: 0.5s;
-  -webkit-box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
 }
 
 .ulRedes li a:before {
@@ -180,10 +158,8 @@ main {
   height: 100%;
   width: 20px;
   background: #ff0000;
-  -webkit-transform: 0.5s;
-          transform: 0.5s;
-  -webkit-transform: rotate(0deg) skewY(-45deg);
-          transform: rotate(0deg) skewY(-45deg);
+  transform: 0.5s;
+  transform: rotate(0deg) skewY(-45deg);
 }
 
 .ulRedes li a:after {
@@ -194,17 +170,13 @@ main {
   height: 20px;
   width: 100%;
   background: #008f00;
-  -webkit-transform: 0.5s;
-          transform: 0.5s;
-  -webkit-transform: rotate(0deg) skewX(-45deg);
-          transform: rotate(0deg) skewX(-45deg);
+  transform: 0.5s;
+  transform: rotate(0deg) skewX(-45deg);
 }
 
 .ulRedes li a:hover {
-  -webkit-transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
-          transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
-  -webkit-box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
-          box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+  transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
 }
 
 .ulRedes li:hover .fa {
@@ -218,11 +190,9 @@ main {
 .ulRedes li:hover:nth-child(1) a {
   background: #3b5998;
 }
-
 .ulRedes li:hover:nth-child(1) a:before {
   background: #365492;
 }
-
 .ulRedes li:hover:nth-child(1) a:after {
   background: #4a69ad;
 }
@@ -230,11 +200,9 @@ main {
 .ulRedes li:hover:nth-child(2) a {
   background: #00aced;
 }
-
 .ulRedes li:hover:nth-child(2) a:before {
   background: #097aa5;
 }
-
 .ulRedes li:hover:nth-child(2) a:after {
   background: #53b9e0;
 }
@@ -242,11 +210,9 @@ main {
 .ulRedes li:hover:nth-child(3) a {
   background: #be3384;
 }
-
 .ulRedes li:hover:nth-child(3) a:before {
   background: #be3384;
 }
-
 .ulRedes li:hover:nth-child(3) a:after {
   background: #dd3999;
 }
@@ -262,4 +228,7 @@ main {
   left: 75%;
   bottom: 45%;
 }
-/*# sourceMappingURL=estilos.css.map */
+
+@media (max-width:620px) {
+  
+}

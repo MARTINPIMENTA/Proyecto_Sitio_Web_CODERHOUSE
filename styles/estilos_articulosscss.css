@@ -1,0 +1,125 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 250px;
+  border-top: 5px dotted red;
+  border-left: 5px dotted #0011ff;
+  border-right: 5px dotted #fffb00;
+  border-bottom: 5px dotted #00ff15;
+  border-radius: 20px;
+}
+
+.tituloPrincipal {
+  text-align: center;
+  margin-bottom: 3.5%;
+}
+
+.tituloPrincipal h1 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: rgba(128, 255, 0, 0.473);
+  width: 80%;
+  border-radius: 2px;
+  color: azure;
+  font-size: 25px;
+  font-family: "Press Start 2P", cursive;
+  float: inline-start;
+  margin-left: 6%;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+/*BEM*/
+.contenedorArticulos {
+  color: black;
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 30px;
+}
+
+.contenedorArticulos__articuloBurger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-bottom: 7%;
+  color: azure;
+  border: 3px dotted;
+  border-radius: 20px;
+}
+
+.contenedorArticulos__articuloBurger img {
+  width: 256px;
+  height: 256px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.contenedorArticulos__articuloBurger p {
+  margin-left: 3%;
+  font-size: 20px;
+}
+
+.contenedorArticulos__articuloBurger:nth-child(1) {
+  border-color: red;
+}
+
+.contenedorArticulos__articuloBurger:nth-child(4) {
+  border-color: red;
+}
+
+.contenedorArticulos__articuloBurger:nth-child(2) {
+  border-color: #0400ff;
+}
+
+.contenedorArticulos__articuloBurger:nth-child(5) {
+  border-color: #0004ff;
+}
+
+.contenedorArticulos__articuloBurger:nth-child(3) {
+  border-color: #fbff00;
+}
+
+.contenedorArticulos__articuloBurger:nth-child(6) {
+  border-color: #fbff00;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 248, 220, 0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 248, 220, 0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=estilos_articulosscss.css.map */
