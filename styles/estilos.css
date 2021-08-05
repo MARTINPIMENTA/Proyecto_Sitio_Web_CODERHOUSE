@@ -9,14 +9,30 @@ body {
   align-content: center;
 }
 
-.navbar-brand img {
+.navegacion {
+  background-color: black;
+  border-radius: 2px;
+  position: relative;
+  width: auto;
+  height: 80px;
+  text-align: center;
+}
+
+.navegacion ul {
+  margin-top: 15px;
+  list-style: none;
+  display: inline-flex;
+}
+
+.navegacion img {
   width: 50px;
   height: 50px;
   position: relative;
   bottom: 21%;
 }
 
-.navbar a {
+.navegacion li,
+.navegacion a {
   padding: 10px;
   font-size: 10px;
   text-decoration: none;
@@ -27,10 +43,35 @@ body {
   color: rgb(25, 255, 5);
 }
 
-.navbar li:hover {
+.navegacion li:hover {
   text-decoration: underline 2px;
 }
 
+.categoriasDesplegable {
+  display: none;
+  position: absolute;
+  background-color: #0000002d;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.categoriasDesplegable a {
+  color: rgb(43, 255, 0);
+  margin-top: 10px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.categoriasDesplegable a:hover {
+  background-color: rgba(72, 255, 0, 0.397);
+  border-radius: 10px;
+}
+.cajaCategorias:hover .categoriasDesplegable {
+  display: block;
+}
 
 main {
   height: 80%;
