@@ -46,9 +46,9 @@ main {
   width: 90%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[3];
+  -ms-grid-rows: (1fr);
       grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 30px;
 }
@@ -83,19 +83,19 @@ main {
   border-color: red;
 }
 
-.contenedorArticulos__articuloBurger:nth-child(4) {
+.contenedorArticulos__articuloBurger:nth-child(2) {
   border-color: red;
 }
 
-.contenedorArticulos__articuloBurger:nth-child(2) {
+.contenedorArticulos__articuloBurger:nth-child(3) {
+  border-color: #0400ff;
+}
+
+.contenedorArticulos__articuloBurger:nth-child(4) {
   border-color: #0400ff;
 }
 
 .contenedorArticulos__articuloBurger:nth-child(5) {
-  border-color: #0004ff;
-}
-
-.contenedorArticulos__articuloBurger:nth-child(3) {
   border-color: #fbff00;
 }
 
