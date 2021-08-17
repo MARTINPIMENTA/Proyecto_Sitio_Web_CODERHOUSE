@@ -1,3 +1,7 @@
+$color-cuadro-primer-row: red;
+$color-cuadro-segunda-row: rgb(4, 0, 255);
+$color-cuadro-tercer-row: rgb(251, 255, 0);
+
 main {
   display: flex;
   flex-flow: column;
@@ -58,28 +62,16 @@ main {
   }
 }
 
-.contenedorArticulos__articuloBurger:nth-child(1) {
-  border-color: red;
-}
-
-.contenedorArticulos__articuloBurger:nth-child(4) {
-  border-color: red;
-}
-
-.contenedorArticulos__articuloBurger:nth-child(2) {
-  border-color: rgb(4, 0, 255);
-}
-
-.contenedorArticulos__articuloBurger:nth-child(5) {
-  border-color: rgb(0, 4, 255);
-}
-
-.contenedorArticulos__articuloBurger:nth-child(3) {
-  border-color: rgb(251, 255, 0);
-}
-
-.contenedorArticulos__articuloBurger:nth-child(6) {
-  border-color: rgb(251, 255, 0);
+@for $i from 1 through 6 {
+  .contenedorArticulos__articuloBurger:nth-child(#{$i}) {
+     @if $i <= 2 {
+      border-color: red;
+     } @else if $i > 2 and $i <= 4 {
+      border-color: rgb(4, 0, 255);
+     } @else if $i > 4 {
+       border-color: rgb(251, 255, 0);
+     }
+  }
 }
 
 
